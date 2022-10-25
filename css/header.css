@@ -1,3 +1,73 @@
-.left a {
-    border: 1px solid red;
+.profile {}
+
+.profile:hover .dropdown {
+    display: block;
+    position: absolute;
+    top: 75%;
+    right: 6.2%;
+}
+
+.profile img {
+    width: 24px;
+    height: 24px;
+}
+
+.profile:hover li {
+    display: block;
+}
+
+.profile li {
+    padding-bottom: 10px;
+}
+
+.lo {
+    border-top: 1px solid #ddd;
+    padding-top: 5px;
+}
+
+
+.app:hover .dropdown {
+    display: block;
+    position: absolute;
+    top: 75%;
+    right: 3%;
+}
+
+.app li {
+    padding-bottom: 10px;
+}
+
+.app {
+    background-color: #000;
+}
+
+.app>a {
+    color: #fff
+}
+
+.service a {}
+
+
+.dropdown {
+    display: none;
+    width: 150px;
+    height: 180px;
+    box-shadow: 0 6px 15px rgb(0 0 0 / 15%), 0 4px 6px rgb(0 0 0 / 5%);
+    border: 1px solid #cfd1d5;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.icon {
+    margin-top: 10px;
+    border: 1px solid black;
+    width: 100px;
+    height: 35px;
+    margin-right: 10px;
+    border-radius: 30px;
+}
+
+.icon span {
+    line-height: 8px;
+    display: block;
 }

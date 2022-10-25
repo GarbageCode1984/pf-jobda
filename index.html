@@ -10,8 +10,14 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
         />
         <link rel="stylesheet" href="./css/reset.css" />
-        <link rel="stylesheet" href="./img" />
         <link rel="stylesheet" href="./css/header.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
         <script
             defer
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
@@ -19,21 +25,23 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg fixed-top bg-light px-3">
+            <nav
+                class="navbar navbar-expand-lg fixed-top bg-white px-3 position-fixed"
+            >
                 <div class="container-fluid">
-                    <div class="left d-flex p-3">
-                        <a class="h1 navbar-brand" href="#">
+                    <div class="left d-flex">
+                        <a class="text-center pt-1" href="#">
                             <img class="w-50" src="./img/Logo.png" alt="logo" />
                         </a>
-                        <ul class="mt-2 d-flex">
-                            <li class="px-2">포지션</li>
-                            <li class="px-2">챌린지</li>
-                            <li class="px-2">대시보드</li>
-                            <li class="px-2">내 프로필</li>
+                        <ul class="navHover d-flex fw-bold fs-2">
+                            <a href="#"><li class="px-2">포지션</li></a>
+                            <a href="#"><li class="px-2">챌린지</li></a>
+                            <a href="#"><li class="px-2">대시보드</li></a>
+                            <a href="#"><li class="px-2">내 프로필</li></a>
                         </ul>
                     </div>
                     <div class="right d-flex flex text-center">
-                        <div class="p-2">
+                        <div class="search p-3">
                             <a href="#">
                                 <img
                                     class="w-50"
@@ -42,140 +50,71 @@
                                 />
                             </a>
                         </div>
-                        <div class="p-2">
+                        <div class="profile p-3">
                             <a href="#">
                                 <img
-                                    class="w-50"
+                                    class=""
                                     src="./img/iconProfile.png"
                                     alt="회원정보"
                                 />
                             </a>
-                            <div>
-                                <ul class="d-none">
-                                    <li>지원 현황</li>
-                                    <li>북마크한 포지션</li>
-                                    <li>내 프로필</li>
-                                    <li>계정 설정</li>
-                                    <li>로그인</li>
+                            <div class="dropdown fw-bold text-start">
+                                <ul class="fs-4">
+                                    <a href="#"><li>지원 현황</li></a>
+                                    <a href="#"><li>북마크한 포지션</li></a>
+                                    <a href="#"><li>내 프로필</li></a>
+                                    <a href="#"><li>계정 설정</li></a>
+                                    <a href="#"><li class="lo">로그인</li></a>
                                 </ul>
                             </div>
                         </div>
-                        <div class="p-2">
-                            <a href="#">취업 APP</a>
-                            <div>
-                                <ul class="d-none">
-                                    <li>기업 리뷰</li>
-                                    <li>역검</li>
-                                    <li>개발자 검사</li>
-                                    <li>기출 면접 연습</li>
-                                    <li>면접 합격 후기</li>
+                        <div class="app p-3 fw-bold fs-4 icon">
+                            <a href="#"><span>취업 APP</span></a>
+                            <div class="dropdown text-start">
+                                <ul class="">
+                                    <a href="#"><li>기업 리뷰</li></a>
+                                    <a href="#"><li>역검</li></a>
+                                    <a href="#"><li>개발자 검사</li></a>
+                                    <a href="#"><li>기출 면접 연습</li></a>
+                                    <a href="#"><li>면접 합격 후기</li></a>
                                 </ul>
                             </div>
                         </div>
-                        <div class="p-2">
-                            <a href="#">기업서비스</a>
+                        <div class="service p-3 fw-bold fs-4 icon">
+                            <a href="#"><span>기업서비스</span></a>
                         </div>
                     </div>
                 </div>
             </nav>
-            <!--             <nav class="nav">
-                <div class="head_left nav ">
-                    <a class="nav-link" href="#"><img src="" alt="JOBDA" /></a>
-                    <a class="nav-link" href="#"><p>포지션</p></a>
-                    <a class="nav-link" href="#"><p>챌린지</p></a>
-                    <a class="nav-link" href="#"><p>대십보드</p></a>
-                    <a class="nav-link" href="#"><p>내 프로필</p></a>
-                </div>
-                <div class="head_right nav">
-                    <ul class="nav  justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#"
-                                ><img src="" alt="검색" />
-                            </a>
-                            <a
-                                class="nav-link dropdown-toggle"
-                                data-bs-toggle="dropdown"
-                                href="#"
-                                role="button"
-                                aria-expanded="false"
-                            >
-                                <img src="" alt="회원정보" />
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        지원 현황
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        북마크한 포지션
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        내 프로필
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        계정 설정
-                                    </a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider" />
-                                    로그인
-                                </li>
-                            </ul>
-                            <a
-                                class="nav-link dropdown-toggle"
-                                data-bs-toggle="dropdown"
-                                href="#"
-                                role="button"
-                                aria-expanded="false"
-                            >
-                                <img src="" alt="회원정보" />
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        취업 APP
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        기업 리뷰
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#"> 역검 </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        개발자 검사
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        기출 면접 연습
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        면접 합격 후기
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    기업서비스 >
-                                </a>
-                            </li>
-                        </li>
-                    </ul>
-                </div>
-            </nav> -->
         </header>
+        <main>
+            <div class="">
+                <div class="mainImage1">
+                    <div class="">
+                        <img class="float-start" src="./img/main1.png" alt="" />
+                        <div class="con">
+                            <em class="fs-4">JOBDA GRAND RENEWAL</em>
+                            <h1 class="fw-bold pt-3">
+                                취업 기회를잡다 <br />
+                                합격 순간을 잡다
+                            </h1>
+                            <p class="fs-2 pt-5">
+                                생생한 기업문화 엿보고<br />
+                                합격률 높은 포지션에 입사지원해보세요
+                            </p>
+                            <a class="d-block p-5" href="#">
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-dark"
+                                >
+                                    <p class="fs-4">취업 지금 바로 잡다</p>
+                                </button>
+                            </a>
+                        </div>
+                        <img class="float-end" src="./img/main1-2.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </main>
     </body>
 </html>
