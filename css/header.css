@@ -1,3 +1,7 @@
+.search {
+    margin-right: -25px;
+}
+
 .profile {}
 
 .profile:hover .dropdown {
@@ -7,9 +11,12 @@
     right: 6.2%;
 }
 
+
 .profile img {
     width: 24px;
     height: 24px;
+    display: block;
+
 }
 
 .profile:hover li {
