@@ -37,7 +37,7 @@ main {
 .conHeader a {
     position: absolute;
     left: 13%;
-    bottom: 40%;
+    bottom: 15vh;
     display: block;
     text-align: center;
     font-size: 24px;
@@ -61,7 +61,7 @@ main {
 .btn1 {
     position: absolute;
     left: 13%;
-    top: 90%;
+    bottom: 5vh;
 }
 
 .btn1Label {
@@ -75,24 +75,29 @@ main {
 .mainPost .col-3:hover {
     transform: scale(1.1);
 }
+
 .fLogo {
     margin-top: 30px;
     width: 180px;
     height: 40px;
 }
+
 footer {
     height: 380px;
 }
-.footerAddress {
-}
+
+.footerAddress {}
+
 .footerAddress ul {
     margin-right: 15px;
 }
+
 .footerAddress ul h3 {
     padding-bottom: 20px;
     font-size: 38px;
     font-weight: bold;
 }
+
 .footerAddress li {
     font-size: 26px;
     color: #333;
